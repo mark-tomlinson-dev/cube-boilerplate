@@ -1,22 +1,10 @@
 {
-  "title": "Leading",
-  "description": "Ratio-based leading/line-height values",
-  "items": [
-    {
-      "name": "Flat",
-      "value": 1
-    },
-    {
-      "name": "Fine",
-      "value": 1.15
-    },
-    {
-      "name": "Standard",
-      "value": 1.5
-    },
-    {
-      "name": "Loose",
-      "value": 1.7
-    }
-  ]
+  "leading": {
+    "$type": "number",
+    "$description": "Ratio-based leading/line-height values.",
+    "flat": { "$value": 1 },
+    "fine": { "$value": 1.15 },
+    "standard": { "$value": 1.5 },
+    "loose": { "$value": 1.7 }
+  }
 }
