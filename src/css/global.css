@@ -1,10 +1,8 @@
-@import 'tailwindcss/base';
+/* Generated variable CSS from sugarcube */
+@import 'global/tokens.variables.gen.css';
 
 @import 'global/reset.css';
 @import 'global/fonts.css';
-
-@import 'tailwindcss/components';
-
 @import 'global/variables.css';
 @import 'global/global-styles.css';
 
@@ -12,4 +10,5 @@
 @import-glob 'compositions/*.css';
 @import-glob 'utilities/*.css';
 
-@import 'tailwindcss/utilities';
+/* Generated utility classes from sugarcube (optional). */
+@import 'utilities/utilities.gen.css';
