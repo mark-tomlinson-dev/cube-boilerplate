@@ -1,11 +1,11 @@
 {
   "type": "module",
   "scripts": {
-    "tokens": "npx make-sugarcube generate",
+    "tokens": "make-sugarcube generate",
     "css": "npx postcss src/css/*.css --dir dist/css",
     "clean": "rm -r -f dist && mkdir dist",
     "start": "npm run clean && npm run tokens && cp src/index.html dist/index.html && concurrently 'npx serve dist' 'npm run css -- --watch'",
-    "validate:tokens": "npx make-sugarcube validate"
+    "validate:tokens": "make-sugarcube validate"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +18,8 @@
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
     "postcss-import-ext-glob": "^2.1.1"
+  },
+  "devDependencies": {
+    "@sugarcube-org/cli": "^0.0.0-alpha.37"
   }
 }
