@@ -1,9 +1,6 @@
-// Configuration reference: https://sugarcube.sh/docs/reference/configuration-schema
-const config = {
-    resolver: 'src/design-tokens/tokens.resolver.json',
-    output: {
-      css: './src/css'
-    },
+import { defineConfig } from '@sugarcube-sh/vite';
+
+export default defineConfig({
     transforms: {
       fluid: {
         min: 330,
@@ -65,7 +62,4 @@ const config = {
         prefix: 'gutter'
       }
     }
-  };
-  
-  export default config;
-  
+});
