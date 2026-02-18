@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from '@sugarcube-org/cli';
+import { defineConfig } from '@sugarcube-sh/cli';
 
 export default defineConfig({
   output: {
