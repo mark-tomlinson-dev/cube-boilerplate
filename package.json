@@ -1,10 +1,10 @@
 {
   "type": "module",
   "scripts": {
-    "tokens": "sugarcube generate --watch",
+    "generate:styles": "sugarcube generate --watch",
     "css": "npx postcss src/css/*.css --dir dist/css",
     "clean": "rm -r -f dist && mkdir dist",
-    "start": "npm run clean && cp src/index.html dist/index.html && concurrently \"npm run tokens\" \"npx serve dist\" \"npm run css -- --watch\"",
+    "start": "npm run clean && cp src/index.html dist/index.html && concurrently \"npm run generate:styles\" \"npx serve dist\" \"npm run css -- --watch\"",
     "validate:tokens": "sugarcube validate"
   },
   "keywords": [],
