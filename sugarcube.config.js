@@ -1,13 +1,17 @@
+// @ts-check
 import { defineConfig } from '@sugarcube-sh/vite';
 
 export default defineConfig({
+  variables: {
     transforms: {
       fluid: {
         min: 330,
         max: 1230
       }
     },
-    utilities: {
+  },
+  utilities: {
+    classes: {
       // Colors
       'color': {
         source: 'color.*',
@@ -17,7 +21,7 @@ export default defineConfig({
         source: 'color.*',
         prefix: 'bg'
       },
-  
+
       // Spacing with directional variants
       'margin': {
         source: 'space.*',
@@ -29,7 +33,7 @@ export default defineConfig({
         prefix: 'p',
         directions: ['all']
       },
-  
+
       // Typography
       'font-size': {
         source: 'size.*',
@@ -47,7 +51,7 @@ export default defineConfig({
         source: 'font.weight.*',
         prefix: 'font'
       },
-  
+
       // CUBE CSS custom property utilities
       '--flow-space': {
         source: 'space.*',
@@ -61,5 +65,7 @@ export default defineConfig({
         source: 'space.*',
         prefix: 'gutter'
       }
+
     }
+  }
 });

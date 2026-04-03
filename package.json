@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@sugarcube-sh/vite": "^0.0.2",
+    "@sugarcube-sh/vite": "^0.1.7",
     "vite": "^7.0.0"
   }
 }
